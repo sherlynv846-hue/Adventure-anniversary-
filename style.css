@@ -1,0 +1,20 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:ui-rounded,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; background:#efe9df;color:#2a2b2f}
+.screen{display:flex;align-items:center;justify-content:center;min-height:100vh}
+.hidden{display:none}
+.intro-card{background:#fffaf3;border:2px solid #e0d6c6;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.08);padding:24px;max-width:900px;width:92%}
+.title{font-size:clamp(28px,5vw,48px);margin:0 0 8px;letter-spacing:.5px;animation:glow 2.6s ease-in-out infinite}
+.subtitle{margin:0 0 14px;color:#5a564e}
+.splash{display:flex;align-items:center;justify-content:center;background:#fbf3e6;border-radius:16px;border:1px dashed #e6d9c8;padding:12px;margin:10px 0}
+.splash img{max-width:100%;height:auto;border-radius:12px}
+.btn{cursor:pointer;border:none;padding:12px 20px;border-radius:14px;background:#6ba86e;color:white;font-weight:700;font-size:16px;box-shadow:0 6px 0 #4f8752;transition:transform .05s}
+.btn:active{transform:translateY(2px);box-shadow:0 4px 0 #4f8752}
+#game{position:relative}
+#gameCanvas{display:block;margin:0 auto;background:#e9f4ef;border-top:2px solid #d4e5dc;border-bottom:2px solid #d4e5dc}
+#hud{position:absolute;left:12px;top:10px;display:flex;gap:16px;background:rgba(255,255,255,.7);padding:8px 12px;border-radius:12px;border:1px solid #d8d0c5}
+#victory{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;background:rgba(255,255,255,.85);text-align:center}
+#victory h2{font-size:40px;margin:0 0 8px;color:#2f6d8e}
+@keyframes glow{
+  0%,100%{text-shadow:0 0 0 rgba(106,175,152,.0)}
+  50%{text-shadow:0 0 14px rgba(106,175,152,.5)}
+}

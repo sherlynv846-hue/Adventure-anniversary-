@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2nd Anniversary Adventure</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="intro" class="screen">
+    <div class="intro-card">
+      <h1 class="title">2nd Anniversary Adventure</h1>
+      <p class="subtitle">Collect the 8 light-blue shards in an enchanted forest.</p>
+      <div class="splash">
+        <img src="assets/splash_sprites.png" alt="Characters and Duck" />
+      </div>
+      <div class="controls">
+        <p><strong>Controls</strong>: ← → or A D to move • Space to jump • Q to make the duck quack 🦆</p>
+      </div>
+      <button id="startBtn" class="btn">Start</button>
+    </div>
+  </div>
+
+  <div id="game" class="screen hidden">
+    <canvas id="gameCanvas" width="960" height="540"></canvas>
+    <div id="hud">
+      <span id="shardCount">Shards: 0 / 8</span>
+      <span id="hint">Tip: The duck follows you and points to nearby shards!</span>
+    </div>
+    <div id="victory" class="hidden">
+      <h2>All shards collected! ✨</h2>
+      <p>Happy 2nd Anniversary! Press <b>R</b> to play again.</p>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
